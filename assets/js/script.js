@@ -31,11 +31,13 @@ updateTime();
     function updateTime() {
         var currentTime = moment().format("H");
         for(var i = 0; i < timeOfDay.length; i++) {
-    
+            // If hour is greater than current hour, set bg color to green
             if (parseInt(timeOfDay[i]) > currentTime) {
                 $("#" + timeOfDay[i]).attr("style", "background-color: #58ce7b");
+            // If hour is lesser than current hour, grey out
             } else if (parseInt(timeOfDay[i]) < currentTime) {
                 $("#" + timeOfDay[i]).attr("style", "background-color: lightgray");
+            // If hour is equal to current hour, set bg color to red
             } else if (parseInt(timeOfDay[i]) == currentTime) {
                 $("#" + timeOfDay[i]).attr("style", "background-color: #fc665e");
             }
