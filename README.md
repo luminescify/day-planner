@@ -1,2 +1,4 @@
-# day-planner
-A useful application to track your daily tasks by the hour
+# Work Day Scheduler
+
+## Description
+A simple calendar app for scheduling your work day by the hour.
